@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Keeper Master</title>
+<style>
+body{
+background-image:url('images/animalzoo.jpg');
+background-size:cover;
+height:550px;
+width:1300px;
+display:flex;
+justify-content:center;
+text-align:center;
+position:absolute;
+background-repeat: no-repeat;
+}
+form{
+color:brown;
+}
+.btnAlign{
+text-align:center;
+margin-left:100px;
+margin-top:40px;
+}
+ .btn{
+ background-color:white;
+ color:brown;
+ font-size:20px;
+ transition-duration: 0.5s;
+ border-radius:80%;
+ width: 90px;
+ height: 45px;
+ 
+ }
+ .button5:hover {
+  background-color: green;
+  color: white;
+}
+label{
+font-size :150%;
+margin-top:50px;
+}
+input{
+margin-top:45px;
+margin-left:40px;
+width:250px;
+height:40px;
+border:2px solid brown;
+border-radius: 10px;
+box-shadow: 2px 2px 3px brown;
+}
+</style>
+<body>
+<form action="keeper_master_action.jsp">
+<h1>Registraction Keeper</h1>
+<label>Name: </label><input type="text" name="keepername" required> 
+<br>
+<label>Date Of Birth: </label><input type="date" name="DOB" required> 
+<br>
+<label>Email: </label><input type="email" name="email" required>
+<br>
+<label>Phone: </label><input type="tel" pattern="[0-9]{2}-[0-9]{9}" placeholder="09-779711404" name="phone" required>
+<br>
+<label>Rank: </label><input type="text" name="type" required>
+<br>
+<div class="btnAlign">
+<input type="submit" value="Save" class="btn button5">
+<input type="reset"value="Reset" class="btn button5">
+</div>
+</form>
+</body>
+</html>

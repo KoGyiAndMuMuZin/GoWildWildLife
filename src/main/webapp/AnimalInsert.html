@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+background-image:url('images/animal.jpg');
+background-size:cover;
+height:500px;
+width:1000px;
+display:flex;
+justify-content:center;
+text-align:center;
+position:absolute;
+background-repeat: no-repeat;
+}
+form{
+color:brown;
+}
+.btnAlign{
+text-align:center;
+margin-left:80px;
+margin-top:30px;
+}
+ .btn{
+ background-color:white;
+ color:brown;
+ font-size:10px;
+ transition-duration: 0.5s;
+ border-radius:60%;
+ width: 70px;
+ height: 35px;
+ 
+ }
+ .button5:hover {
+  background-color: orange;
+  color: white;
+}
+label{
+font-size :100%;
+margin-top:30px;
+}
+input{
+margin-top:45px;
+margin-left:40px;
+width:200px;
+height:30px;
+border:2px solid brown;
+border-radius: 10px;
+box-shadow: 2px 2px 3px brown;
+}
+</style>
+</head>
+<body>
+<form action="animal_master_action.jsp">
+<label>Animal Name:</label> <input type="text" name="name" required >
+<br>
+<label>Animal Gender:</label> <input type="text" name="gender" required>
+<br>
+<label>Animal year:</label> <input type="text" name="year" required>
+<br>
+<label>SpeciesID:</label> <input type="text" name="SID">
+<br>
+<label>DietID:</label> <input type="text" name="DID">
+<br>
+<label>KeeperID:</label> <input type="text" name="KID">
+<br>
+<label>EnclosureID:</label> <input type="text" name="EID">
+<div class="btnAlign">
+<input type="submit" value="Save" class="btn button5">
+<input type="reset"value="Reset" class="btn button5">
+</div>
+</form>
+</body>
+</html>
